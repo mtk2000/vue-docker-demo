@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <button @click="handleClick">点击</button>
+    <button @click="handleClick">欢迎点击</button>
   </div>
 </template>
 
@@ -9,8 +9,7 @@ export default {
   name: "App",
   methods: {
     handleClick() {
-      console.log("点击事件触发");
-      alert("清晨");
+      alert("你好呀，欢迎来到 vue-docker 世界！");
     },
   },
 };
