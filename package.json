@@ -3,9 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --open --port 8899",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "help": "vue-cli-service help",
+    "lint": "vue-cli-service lint",
+    "inspect": "vue-cli-service inspect",
+    "inspect-rules": "vue-cli-service inspect --rules",
+    "inspect-plugins": "vue-cli-service inspect --plugins"
   },
   "dependencies": {
     "core-js": "^3.6.5",
