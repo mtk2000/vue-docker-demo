@@ -1,4 +1,4 @@
-# vvv
+# vue-docker-demo
 
 ## Project setup
 ```

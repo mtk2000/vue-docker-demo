@@ -1,16 +1,28 @@
 <template>
   <div id="app">
-    <button @click="handleClick">欢迎点击</button>
+    <img alt="Vue logo" src="./assets/logo.png">
+    <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
 </template>
 
 <script>
+import HelloWorld from './components/HelloWorld.vue'
+
 export default {
-  name: "App",
-  methods: {
-    handleClick() {
-      alert("你好呀，欢迎来到 vue-docker 世界！");
-    },
-  },
-};
+  name: 'App',
+  components: {
+    HelloWorld
+  }
+}
 </script>
+
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
