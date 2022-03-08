@@ -6,10 +6,10 @@ WORKDIR /build
 
 RUN yarn config set registry https://registry.npm.taobao.org
 
-COPY package.json /build/package.json
-
-RUN yarn install
+# COPY package.json /build/package.json
 
 COPY ./ /build
+
+RUN yarn install
 
 RUN yarn build
