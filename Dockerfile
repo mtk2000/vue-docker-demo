@@ -4,12 +4,12 @@ FROM node:12-alpine
 
 WORKDIR /build
 
-RUN npm set registry https://registry.npm.taobao.org
+RUN yarn config set registry https://registry.npm.taobao.org
 
 COPY package.json /build/package.json
 
-RUN npm install
+RUN yarn install
 
 COPY ./ /build
 
-RUN npm run build
+RUN yarn build
