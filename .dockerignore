@@ -1,0 +1,40 @@
+#	注释
+#   *	匹配0或多个非/的字符
+#   ?	匹配1个非/的字符
+#   **	0个或多个目录
+#   !	除...外，需结合上下文语义
+
+
+**/node_modules
+_roadhog-api-doc
+
+# production
+/dist
+/.vscode
+
+# misc
+.DS_Store
+npm-debug.log*
+yarn-error.log
+
+/coverage
+.idea
+yarn.lock
+package-lock.json
+*bak
+.vscode
+
+# visual studio code
+.history
+*.log
+
+functions/mock
+.temp/**
+
+# umi
+.umi
+.umi-production
+
+# screenshot
+screenshot
+.firebase
