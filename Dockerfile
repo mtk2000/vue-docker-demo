@@ -27,9 +27,10 @@ RUN rm -rf /code
 # 容器内全局安装 http-server 依赖
 RUN yarn global add http-server
 
-# 给容器内部设置固定端口
-RUN http-server -p 8821
-
+# 给容器内部设置固定端口 8821
 EXPOSE 8821
+
+# 启动容器后，默认执行的命令
+CMD http-server -p 8821
 
 
