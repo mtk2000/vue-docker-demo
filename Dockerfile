@@ -19,8 +19,17 @@ WORKDIR /www/vue
 
 RUN mv /code/dist/*  /www/vue
 
-# vue 项目构建打包生成静态资源文件后，记得删除源码，减少镜像体积
-# RUN rm -rf /code
+# 此处 运行  docker run  -it vue:2.0.0  /bin/sh
 
+# vue 项目构建打包生成静态资源文件后，记得删除源码，减少镜像体积
+RUN rm -rf /code
+
+# 容器内全局安装 http-server 依赖
+RUN yarn global add http-server
+
+# 给容器内部设置固定端口
+RUN http-server -p 8821
+
+EXPOSE 8821
 
 
